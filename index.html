@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Stock Forecasting with Evolutionary Deep Reinforcement Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #000;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .team {
+            margin-bottom: 30px;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Intelligent Stock Forecasting with Evolutionary Deep Reinforcement Learning</h1>
+
+    <div class="team">
+        <h2>Team & Guide</h2>
+        <p><strong>Guide:</strong> Ms. Anisha Radhakrishnan</p>
+        <ul>
+            <li>CB.EN.U4CSE21107 – Arvind Palani (Section B)</li>
+            <li>CB.EN.U4CSE21114 – Harinandan DN (Section B)</li>
+            <li>CB.EN.U4CSE21126 – Selvakumaran Kannan (Section B)</li>
+            <li>CB.EN.U4CSE21136 – Moin Ashwath (Section B)</li>
+        </ul>
+    </div>
+
+    <h2>Objective</h2>
+    <p>Build a predictive model using stock metrics, news sentiment, and economic indicators. Implement NEAT-enhanced DDPG to adaptively forecast trends and make trading decisions.</p>
+
+    <h2>Problem Statement</h2>
+    <p>Forecast stock market trends using reinforcement learning and evolutionary algorithms with multimodal inputs like news sentiment and financial data.</p>
+
+    <h2>Proposed Architecture</h2>
+    <p>Uses NEAT for dynamic policy evolution over DDPG.</p>
+    <div class="image">
+        <img src="architecture.png" alt="System Architecture">
+    </div>
+
+    <h2>Methodology</h2>
+    <ul>
+        <li>Feature engineering with stock indicators</li>
+        <li>Optimized reward function</li>
+        <li>Integrated NEAT with DDPG</li>
+        <li>Evaluated using Sharpe Ratio, Max Drawdown, etc.</li>
+    </ul>
+
+    <h2>Reward Function</h2>
+    <ul>
+        <li>Maximizes profit while considering risk, cost, and time value</li>
+        <li>Sharpe ratio used for risk-adjusted reward</li>
+        <li>Transaction cost and market realism included</li>
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+        <li>Higher Sharpe Ratio with NEAT-DDPG</li>
+        <li>Reduced drawdown and volatility</li>
+        <li>Outperforms Buy-and-Hold strategy</li>
+    </ul>
+    <div class="image">
+        <img src="results.png" alt="Results Snapshot">
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>NEAT-DDPG provides a stable, adaptive, and profitable strategy for stock trend prediction using RL with real-world constraints.</p>
+
+</body>
+</html>
