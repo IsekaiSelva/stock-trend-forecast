@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEAT-DDPG Stock Forecasting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #f5f6fa;
+      max-width: 1000px;
+      color: #2c3e50;
+      line-height: 1.7;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #34495e;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #2ecc71;
+      padding-bottom: 5px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    .graybox {
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    }
+    .metric-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      font-weight: bold;
+    }
+    .metric {
+      flex: 1;
+      margin: 10px;
+      min-width: 200px;
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .metric span {
+      display: block;
+      font-size: 24px;
+      color: #2ecc71;
+      margin-top: 8px;
+    }
+    .image {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .image img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    a { color: #2980b9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media screen and (max-width: 768px) {
+      .metric-row { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>NEAT-DDPG: Intelligent Stock Forecasting</h1>
+  <div class="graybox">
+    <h2>Team & Guide</h2>
+    <strong>Guide:</strong> Ms. Anisha Radhakrishnan<br>
+    <ul>
+      <li>Arvind Palani – CB.EN.U4CSE21107</li>
+      <li>Harinandan DN – CB.EN.U4CSE21114</li>
+      <li>Selvakumaran Kannan – CB.EN.U4CSE21126</li>
+      <li>Moin Ashwath – CB.EN.U4CSE21136</li>
+    </ul>
+  </div>
+  <h2>Model Insights</h2>
+  <ul>
+    <li>DDPG trained with NEAT-based evolving networks</li>
+    <li>Reward function balances returns, drawdown, volatility</li>
+    <li>Explained using SHAP for transparency</li>
+    <li>Evaluated on Sharpe, Return, Volatility</li>
+  </ul>
+  <h2>System Architecture</h2>
+  <div class="image">
+    <img src="system_architecture.jpg" alt="Architecture Diagram">
+  </div>
+  <div class="graybox">
+    <h2>📈 Performance Summary</h2>
+    <div class="metric-row">
+      <div class="metric">
+        Sharpe Ratio
+        <span>2.04</span>
+        +252% vs Buy-and-Hold<br>+39% vs TD3
+      </div>
+      <div class="metric">
+        Max Drawdown
+        <span>-10.5%</span>
+        53% less than Buy-and-Hold<br>3.4% better than TD3
+      </div>
+      <div class="metric">
+        Annualized Return
+        <span>19.4%</span>
+        +155% vs Buy-and-Hold<br>Stable vs DDPG
+      </div>
+      <div class="metric">
+        Volatility
+        <span>12.8%</span>
+        -16% vs Buy-and-Hold
+      </div>
+    </div>
+  </div>
+
+
+  
+
+ 
+
+  
+
+  <h2>Comparative Model Performance</h2>
+  <div class="graybox">
+    <p><strong>Best RL Baseline (TD3/DDPG):</strong></p>
+    <ul>
+      <li>Sharpe Ratio: 1.47 (TD3)</li>
+      <li>Max Drawdown: -10.87%</li>
+      <li>Annualized Return: ~41% (DDPG)</li>
+    </ul>
+    <p><strong>Buy-and-Hold Strategy:</strong></p>
+    <ul>
+      <li>Sharpe Ratio: 0.58</li>
+      <li>Max Drawdown: -22.4%</li>
+      <li>Annualized Return: 7.6%</li>
+      <li>Volatility: 15.2%</li>
+    </ul>
+  </div>
+
+  <h2>Demo Files & Links</h2>
+  <ul>
+    <li><a href="final_dataset_converted.csv" download>📥 Download Final Dataset (CSV)</a></li>
+    <li><a href="Updated_Paper_with_all_refernces.docx" download>📄 Download Final Report (DOCX)</a></li>
+    <li><a href="https://colab.research.google.com/drive/1TKZhWtvGgTrz3oOBuJ8ZXQo4fQPGk9pU" target="_blank">🚀 View NEAT-DDPG Notebook (Colab)</a></li>
+  </ul>
+
+  <h2>Conference Submission</h2>
+  <p>This project has been submitted to the <strong>5th International Conference on Advanced Computational and Communication Paradigm (ICACCP)</strong>.</p>
+  <p><a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/65273" target="_blank">🔗 View Conference Details</a></p>
+
+</body>
+</html>
